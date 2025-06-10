@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    padding: 0 20px;
+    background-color: rgba(234, 234, 234, 1);
+    max-width: 1440px;
+    width: 100%;
+    min-height: 900px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    max-width: 1110px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headers .models {
+    margin-left: 5px;
+    max-width: 250px;
+    width: 100%;
+    position: relative;
+    color: rgba(16, 16, 16, 1);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-style: medium;
+    line-height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.numbers {
+    cursor: pointer;
+    width: 100%;
+}
+
+.models:hover .menu {
+    display: flex;
+}
+
+.menuopen {
+    display: flex;
+}
+
+.menu {
+    background-color: rgba(234, 234, 234, 1);
+    position: absolute;
+    top: 21px;
+    left: 0;
+    z-index: 20000;
+    max-width: 250px;
+    width: 100%;
+    min-height: 300px;
+    display: none;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px 29px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.1));
+}
+
+.menu .product {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product p {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-style: medium;
+    font-weight: 500;
+}
+
+.product:hover .menu2 {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 12px;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 139px;
+    width: 100%;
+    height: auto;
+}
+
+.menu2 {
+    margin-top: 12px;
+    margin-left: 12px;
+    display: none;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 139px;
+    width: 100%;
+    height: auto;
+}
+
+.liproducts {
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-style: medium;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(176, 176, 176);
+}
+
+.liproducts:hover {
+    color: rgba(255, 165, 66, 1);
+    transition: all .3s;
+}
+
+.carts {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+}
+
+.interes-a {
+    position: relative;
+}
+
+.interesCount {
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    background-color: rgba(255, 165, 66, 1);
+    color: #ffffff;
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-style: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-a {
+    position: relative;
+}
+
+.countCart {
+    position: absolute;
+    top: -7px;
+    right: -8px;
+    background-color: rgba(255, 165, 66, 1);
+    color: #ffffff;
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-style: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-favorites {
+    margin-bottom: 210px;
+    max-width: 1110px;
+    width: 100%;
+    min-height: 600px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.textfavorites {
+    margin-top: 30px;
+    color: rgba(28, 28, 39, 1);
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.naushniky {
+    min-height: 408px;
+    max-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.bez-naushniky{
+    background-color: rgb(176, 176, 176);
+    min-height: 408px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+                /*Card*/
+
+.card {
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 1);
+    max-width: 350px;
+    width: 100%;
+    min-height: 408px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.1));
+}
+
+.imgnaushniky {
+    width: 219px;
+    height: 219px;
+}
+
+.center {
+    max-width: 307px;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.center .pcenter {
+    color: rgba(28, 28, 39, 1);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-style: Medium;
+    font-weight: 500;
+}
+
+.center p .price {
+    color: rgba(255, 165, 66, 1);
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-style: Medium;
+    font-weight: 500;
+}
+
+.pcenaSale {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.pcenaSale span {
+    color: rgba(255, 206, 127, 1);
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-style: Medium;
+    font-weight: 500;
+}
+
+.btadd {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    width: 60px;
+    height: 35px;
+    background-color: rgba(16, 16, 16, 0.282);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+}
+
+.btadd:hover {
+    background-color: rgba(16, 16, 16, 1);
+}
+
+.hartcard {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.priceSale {
+    color: rgba(170, 170, 170, 1) !important; 
+    margin-right: 76px;
+    text-decoration: line-through rgba(223, 100, 100, 1);
+    font-size: 14px;
+}
+
+.priceRed {
+    color: rgba(223, 100, 100, 1) !important;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-style: Medium;
+    font-weight: 500;
+}
+
+.sale {
+    color: rgba(223, 100, 100, 1);
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-style: Medium;
+    font-weight: 500;
+}
+
+             /*Fotters*/
+
+.footers {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 29px;
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 60px;
+    max-width: 1110px;
+    width: 100%;
+    min-height: 149px;
+    max-height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.1));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textContent {
+    max-width: 427px;
+    width: 100%;
+    min-height: 82px;
+    max-height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.left p {
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-style: Medium;
+    font-weight: 600;
+}
+
+.rigth {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 40px;
+    column-gap: 16px;
+}
+
+.rigth p {
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-style: Medium;
+    font-weight: 600;
+}
+
+.languer {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.lilamgure {
+    cursor: pointer;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    font-style: Medium;
+    font-weight: 600;
+}
+
+.lilamgure:hover {
+    color: rgba(255, 165, 66, 1);
+    transition: all .3s;
+}
+
+@media (max-width: 661px) {
+
+    .baner {
+        padding: 0 10px;
+        height: 173px;
+    }
+
+    .baner p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .baner img {
+        max-width: 170px;
+        width: 100%;
+        height: 176px;
+    }
+}
+
+@media (max-width: 441px) {
+
+.numbers {
+    text-align: center;
+    font-size: 12px;
+}
+
+}
+
+@media (max-width: 390px) {
+
+    .menu {
+        top: 32px;
+    }
+
+    .product p {
+        max-width: 180px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .liproducts {
+        font-size: 12px;
+    }
+
+    .menu2 {
+        width: 100%;
+    }
+}
+
